@@ -1,0 +1,105 @@
+// Exercise 1: Calculate the Sum of Two Numbers
+
+a + b = c
+
+num1 + num2 = sum
+print sum
+
+ask for 2 numbers 
+add the 2 number together 
+print on the screen the sum of those 2 numbers
+
+
+// Exercise 2: Check if a Number is Even or Odd
+
+(My pseudocode here)
+*** 
+    // Prompt the user to enter a number
+    PRINT "Enter a number: "
+    READ number
+
+    // Check if the number is even or odd
+    IF number MOD 2 == 0 THEN
+        PRINT "The number ", number, " is even."
+    ELSE
+        PRINT "The number ", number, " is odd."
+    END IF
+
+
+In this pseudo code:
+- `number MOD 2 == 0` checks if the remainder of `number` divided by 2 is 0, which means the number is even.
+- If the condition is true, it prints that the number is even.
+- Otherwise, it prints that the number is odd.
+
+// Exercise 3: 
+Write pseudo code that will perform the following.    
+
+a) Read in 5 separate numbers.   
+b) Calculate the average of the five numbers.
+c) Find the smallest (minimum) and largest (maximum) of the five entered numbers.
+d) Write out the results found from steps b and c with a message describing what they are
+
+(Your pseudocode here)
+*** START
+
+// Step A: Read five separate numbers
+DECLARE num1, num2, num3, num4, num5 AS INTEGER
+
+PRINT "Enter five numbers: "
+READ num1
+READ num2
+READ num3
+READ num4
+READ num5
+
+// Step B: Calculate the average of the five numbers
+DECLARE average AS FLOAT
+average = (num1 + num2 + num3 + num4 + num5) / 5
+
+// Step C: Find the smallest and the largest of the five numbers
+DECLARE smallest, largest AS INTEGER
+
+// Initialize smallest and largest
+smallest = num1
+largest = num1
+
+// Compare each number to find the smallest
+IF num2 < smallest THEN
+    smallest = num2
+ENDIF
+
+IF num3 < smallest THEN
+    smallest = num3
+ENDIF
+
+IF num4 < smallest THEN
+    smallest = num4
+ENDIF
+
+IF num5 < smallest THEN
+    smallest = num5
+ENDIF
+
+// Compare each number to find the largest
+IF num2 > largest THEN
+    largest = num2
+ENDIF
+
+IF num3 > largest THEN
+    largest = num3
+ENDIF
+
+IF num4 > largest THEN
+    largest = num4
+ENDIF
+
+IF num5 > largest THEN
+    largest = num5
+ENDIF
+
+// Output the results
+PRINT "The average of the five numbers is: ", average
+PRINT "The smallest number is: ", smallest
+PRINT "The largest number is: ", largest
+
+-- END --
